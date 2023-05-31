@@ -1,0 +1,100 @@
+.rent {
+    padding: 4.8em 0 10em;
+
+    .container {
+        .section-title {
+            display: inline-block;
+            margin: 0 0 0 3.55em;
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                height: 0.047em;
+                width: 100vw;
+                background-color: #cd1719;
+                left: -30.45em;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .columns {
+            padding: 7.5em 0 0 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .column {
+                .rent-options {
+                    padding: 10em 0 0 0.9em;
+                    .rent-option {
+                        margin: 0 0 4.1em 0;
+                        .option-title {
+                            font-size: 3.2em;
+                            font-weight: 700;
+                            width: 100%;
+                            max-width: 9em;
+                            text-transform: uppercase;
+                            line-height: 1.25;
+                            margin: 0 0 0.7em 0;
+                        }
+                        .option-price {
+                            font-size: 2em;
+                            padding: 0.65em 2.15em;
+                            border: 0.05em solid #333;
+                            width: auto;
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                .btn-rent {
+                    font-size: 2em;
+                    text-transform: uppercase;
+                    margin: 1.95em 0 0 0.45em;
+                    padding: 1.5em 5.3em 1.55em 2.5em;
+                    display: inline-block;
+                    border-left: 0.45em solid #333;
+                    color: #fff;
+                    background: red;
+                    cursor: pointer;
+                    &::after {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        top: 50%;
+                        right: 3.75em;
+                        z-index: 10;
+                        transform: translateY(-50%);
+                        width: 0.6em;
+                        height: 1.5em;
+                        background-image: url(/images/icon-arrow-btn.svg);
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .rent-corp-title {
+                    font-size: 2em;
+                    margin: 0 0 0.8em 0;
+                }
+                .rent-photo {
+                    .rent-photo-img {
+                        border-style: none;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .column:first-child {
+                width: 34.8%;
+                flex: none;
+            }
+            .column:last-child {
+                width: 100%;
+                flex: 1;
+            }
+        }
+    }
+}

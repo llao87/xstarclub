@@ -1,0 +1,50 @@
+.about {
+    padding: 8em 0;
+    .container {
+        .section-title {
+            display: inline-block;
+            margin: 0 0 0 3.55em;
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                height: .047em;
+                width: 100vw;
+                background-color: $red;
+                right: 4.65em;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .columns {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .column {
+                width: 50%;
+
+                .about-text {
+                    padding: 5.4em 20em 8em 0.8em;
+
+                    p {
+                        font-size: 2em;
+                        line-height: 1.4;
+                        margin: 0 0 0.5em 0;
+                    }
+                }
+                .about-photo {
+                    width: 74em;
+                    height: 69.4em;
+                    position: absolute;
+                    top: -5.5em;
+                    left: -8em;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

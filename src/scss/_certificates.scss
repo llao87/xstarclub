@@ -1,0 +1,114 @@
+.certificates {
+    padding: 6.5em 0 10em 0;
+    .container {
+        .section-title {
+            margin: 0 0 0 3.55em;
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                height: 0.047em;
+                width: 100vw;
+                background-color: #cd1719;
+                left: -30.45em;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .columns {
+            margin: 7.8em 0 0 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .column {
+                .certificate-photo {
+                    .photo-img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        z-index: 1;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        bottom: -16.5em;
+                        right: -4.6em;
+                        width: 44.8em;
+                        height: 43em;
+                        transform: rotate(0deg);
+                        background-image: url(../images/certificate-up-layer.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        z-index: 10;
+                    }
+                }
+                .column-title {
+                    font-size: 2em;
+                    margin: 0.3em 0 0.65em 0;
+                }
+
+                .certificate-variants {
+                    display: inline-flex;
+                    flex-direction: column;
+                    max-width: 63.2em;
+                    width: 100%;
+                    .variant {
+                        display: flex;
+                        align-items: stretch;
+                        justify-content: space-between;
+                        border: 0.05em solid #333;
+                        margin: 0 0 1.8em 0;
+                        .time {
+                            font-size: 3.2em;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            padding: 1.8em 1.6em 1.8em 0;
+                            border-right: 0.05em solid #333;
+                            width: 100%;
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .cost {
+                            display: flex;
+                            font-size: 3.65em;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            border-left: none;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            width: 5.65em;
+                            padding: 0.1em 0 0 0;
+                            flex: none;
+                        }
+                    }
+                }
+                .rules {
+                    max-width: 63.2em;
+                    width: 100%;
+                    margin: 2.2em 0 0 0.2em;
+                    p {
+                        font-size: 2em;
+                        line-height: 1.4;
+                        margin: 0 0 0.4em 0;
+                    }
+                }
+            }
+
+            .column:first-child {
+                width: 45.5%;
+                flex: none;
+            }
+            .column:last-child {
+                width: 100%;
+                flex: 1;
+                padding: 0 0 0 10.8em;
+            }
+        }
+    }
+}

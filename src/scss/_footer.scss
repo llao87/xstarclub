@@ -1,0 +1,72 @@
+footer {
+    padding: 5.7em 0;
+    background-color: #4a4a4a;
+    .container {
+        .logo-row {
+            display: flex;
+            align-items: center;
+            margin: 0 0 1.6em 0;
+            .logo {
+                display: inline-block;
+                width: 29em;
+                text-decoration: none;
+                outline: none;
+                margin: 0 0 0 0.8em;
+                .logo-img {
+                    width: 100%;
+                    height: auto;
+                }
+                &::before,
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    height: 0.3em;
+                    width: 100vw;
+                    background-color: #fff;
+                    right: 0;
+                    bottom: 0.2em;
+                }
+                &::after {
+                    right: auto;
+                    left: 0;
+                }
+            }
+            .phone {
+                text-decoration: none;
+                color: #fff;
+                outline: none;
+                font-size: 3.2em;
+                font-weight: 700;
+                margin: 0 0 0.2em 6.9em;
+            }
+        }
+
+        .soc-row {
+            display: flex;
+            align-items: center;
+            .socials {
+                width: 23em;
+                margin: 0 0 0 0.8em;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                .soc-link {
+                    display: block;
+                    width: 4.4em;
+                    height: 4.4em;
+                    margin: 0 1.2em 0 0;
+                    .soc-icon {
+                    }
+                }
+            }
+            .address {
+                font-size: 2em;
+                color: #fff;
+                width: auto;
+                display: inline-block;
+                margin: 0 0 0.8em 9.9em;
+            }
+        }
+    }
+}

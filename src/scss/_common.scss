@@ -1,0 +1,38 @@
+* {
+    position: relative;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Play", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+body {
+    min-width: 320px;
+    // font-size: 10px;
+    font-size: 0.520834vw;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 132em;
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 0 auto;
+
+    .section-title {
+        font-size: 6.4em;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}
+.container--wide {
+    max-width: none;
+    padding: 0;
+}
