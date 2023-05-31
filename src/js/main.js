@@ -30,7 +30,18 @@ jQuery(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        appendDots: $('.slider-pilots-dots'),
+        appendDots: $(".slider-pilots-dots"),
         draggable: true,
+    });
+
+    jQuery("a[href^='#']").on("click", function (e) {
+        e.preventDefault();
+        let href = $(this).attr("href");
+
+        $("html, body").animate({
+            scrollTop: $(href).offset().top,
+        });
+
+        return false;
     });
 });
