@@ -44,4 +44,13 @@ jQuery(function () {
 
         return false;
     });
+
+    // FAQ collapse
+    $(".js__collapser").on("click", function () {
+        $(this)
+            .toggleClass("active")
+            .parents(".question")
+            .next(".answer")
+            .slideToggle();
+    });
 });

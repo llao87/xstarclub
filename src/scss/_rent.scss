@@ -26,24 +26,22 @@
             justify-content: space-between;
             .column {
                 .rent-options {
-                    padding: 10em 0 0 0.9em;
+                    padding: 9.2em 0 0 1.2em;
                     .rent-option {
                         margin: 0 0 4.1em 0;
                         .option-title {
-                            font-size: 3.2em;
+                            font-size: 2.4em;
                             font-weight: 700;
                             width: 100%;
-                            max-width: 9em;
+                            max-width: 11.5em;
                             text-transform: uppercase;
-                            line-height: 1.25;
-                            margin: 0 0 0.7em 0;
+                            line-height: 1.3;
+                            margin: 0 0 1.2em 0;
                         }
                         .option-price {
                             font-size: 2em;
-                            padding: 0.65em 2.15em;
-                            border: 0.05em solid #333;
-                            width: auto;
-                            display: inline-block;
+                            line-height: 1.4;
+                            max-width: 16em;
                         }
                     }
                 }
@@ -51,7 +49,7 @@
                 .btn-rent {
                     font-size: 2em;
                     text-transform: uppercase;
-                    margin: 1.95em 0 0 0.45em;
+                    margin: 0.75em 0 0 -0.15em;
                     padding: 1.5em 5.3em 1.55em 2.5em;
                     display: inline-block;
                     border-left: 0.45em solid #333;

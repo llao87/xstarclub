@@ -56,10 +56,26 @@ footer {
                     width: 4.4em;
                     height: 4.4em;
                     margin: 0 1.2em 0 0;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
                     .soc-icon {
                         width: 100%;
                         height: auto;
                     }
+                }
+                .soc-link--insta {
+                    background-image: url("/images/icon-soc-insta-wht.svg");
+                }
+                .soc-link--vk {
+                    background-image: url("/images/icon-soc-vk-wht.svg");
+                }
+                .soc-link--wa {
+                    background-image: url("/images/icon-soc-wa-wht.svg");
+                }
+                .soc-link--tlgm {
+                    background-image: url("/images/icon-soc-tlgm-wht.svg");
                 }
             }
             .address {
@@ -68,6 +84,25 @@ footer {
                 width: auto;
                 display: inline-block;
                 margin: 0 0 0.8em 9.9em;
+            }
+        }
+
+        .flex-btn-order {
+            width: 14.8em;
+            height: 14.8em;
+            border-radius: 20em;
+            background-image: url(/images/button-order-inactive.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: fixed;
+            right: 10%;
+            bottom: 5%;
+            cursor: pointer;
+            transition: all 0.3s linear;
+
+            &:hover {
+                background-image: url(/images/button-order-hover.svg);
             }
         }
     }

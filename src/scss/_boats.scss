@@ -28,14 +28,20 @@
                         display: flex;
                         align-items: stretch;
                         justify-content: space-between;
-                        padding: 8em 0 4em;
+                        padding: 5.8em 0 7.4em;
                         .column {
                             width: 51.5%;
 
                             .boat-photo {
+                                height: 60.8em;
+                                overflow: hidden;
+                                width: 100%;
                                 .photo-img {
-                                    width: 100%;
+                                    width: auto;
                                     height: 100%;
+                                    display: block;
+                                    position: absolute;
+                                    right: 0.5em;
                                 }
                             }
                             .about-boat {
@@ -44,7 +50,7 @@
                                     line-height: 1.4;
                                     width: 30em;
                                     font-weight: 400;
-                                    margin: 0 0 3.2em 0;
+                                    margin: 0 0 3.1em 0;
                                 }
 
                                 .technicals {
@@ -84,9 +90,12 @@
                                     }
                                 }
                             }
+                            &:first-child {
+                                width: 51.5%;
+                            }
                             &:last-child {
                                 width: 48.5%;
-                                padding: 3.2em 4em 2em 10.8em;
+                                padding: 1.2em 4em 2em 10.4em;
                             }
                         }
                     }

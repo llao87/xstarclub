@@ -124,12 +124,15 @@
             display: flex;
             align-items: stretch;
             justify-content: space-between;
+            padding: 1em;
 
             .column.column--trainer {
-                width: 32.5%;
+                width: 33.333333%;
                 display: inline-block;
                 flex: none;
                 border-left: 0.01em solid #333;
+                border-bottom: 0.01em solid #333;
+                padding: 0 1em 2em 0;
 
                 .trainer-photo {
                     width: 100%;
@@ -172,6 +175,36 @@
             }
             .column:last-child {
             }
+        }
+        .columns.columns--trainers {
+            margin-bottom: 0;
+        }
+        .columns.columns--prices {
+            margin-top: 0;
+
+            .column.column--price {
+                width: 33.333333%;
+                display: inline-block;
+                flex: none;
+                border-left: 0.01em solid #333;
+                border-top: 0.01em solid #333;
+                padding: 0.55em 0 1.05em 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3.6em;
+            }
+        }
+        .set {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4em;
+            font-weight: 700;
+            margin: 0 0 0.3em 0;
+            text-transform: uppercase;
+            color: #cd1719;
+            padding: 1em 0 0.8em;
         }
     }
 }
