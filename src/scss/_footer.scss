@@ -59,6 +59,7 @@ footer {
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    transition: all 0.3s linear;
 
                     .soc-icon {
                         width: 100%;
@@ -67,15 +68,27 @@ footer {
                 }
                 .soc-link--insta {
                     background-image: url("/images/icon-soc-insta-wht.svg");
+                    &:hover {
+                        background-image: url("/images/icon-soc-insta-red.svg");
+                    }
                 }
                 .soc-link--vk {
                     background-image: url("/images/icon-soc-vk-wht.svg");
+                    &:hover {
+                        background-image: url("/images/icon-soc-vk-red.svg");
+                    }
                 }
                 .soc-link--wa {
                     background-image: url("/images/icon-soc-wa-wht.svg");
+                    &:hover {
+                        background-image: url("/images/icon-soc-wa-red.svg");
+                    }
                 }
                 .soc-link--tlgm {
                     background-image: url("/images/icon-soc-tlgm-wht.svg");
+                    &:hover {
+                        background-image: url("/images/icon-soc-tlgm-red.svg");
+                    }
                 }
             }
             .address {
