@@ -55,7 +55,7 @@
                             font-size: 3.2em;
                             font-weight: 700;
                             text-transform: uppercase;
-                            margin: 0 0 0.8em 0.3em;
+                            margin: 2em 0 0.8em 0.3em;
                         }
                         .detail {
                             font-size: 2em;
@@ -87,26 +87,64 @@
         }
         .slider-pilots-dots {
             position: absolute;
-            width: 50em;
-            z-index: 100500;
+            width: auto;
+            z-index: 10;
+            top: 4.7em;
+            left: 40em;
 
             .slick-dots {
+                position: absolute;
+                top: 0.4em;
                 display: flex;
+                width: auto;
                 align-items: center;
-                justify-content: space-between;
-                list-style-type: none;
-                li {
-                    width: 50%;
-                    height: 4px;
-                    color: #d3d3d3;
+                justify-content: center;
+                list-style: none;
 
+                li {
+                    padding: 1.1em;
                     button {
-                        display: none !important;
+                        display: inline-block;
+                        background: none;
+                        border: none;
+                        font-size: 3em;
+                        font-weight: 700;
+                        cursor: pointer;
                     }
                 }
-                li.slick-active {
-                    color: red;
+                .slick-active {
+                    border: 0.01em solid #333;
+
+                    button {
+                        font-weight: 500;
+                    }
                 }
+            }
+        }
+        .slider-pilots-arrows {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            height: auto;
+            z-index: 10;
+            left: 112em;
+            transform: translateY(-50%);
+
+            span.slick-prev.slick-arrow {
+                display: none !important;
+            }
+            span.slick-next.slick-arrow {
+                border: none;
+                display: inline-block;
+                width: 4em;
+                height: 10em;
+                background-color: transparent;
+                background-image: url(/images/slick-next.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
             }
         }
     }

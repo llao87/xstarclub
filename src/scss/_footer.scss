@@ -104,6 +104,7 @@ footer {
             width: 14.8em;
             height: 14.8em;
             border-radius: 20em;
+            background-color: #fff;
             background-image: url(/images/button-order-inactive.svg);
             background-size: contain;
             background-position: center;
@@ -113,7 +114,7 @@ footer {
             bottom: 5%;
             cursor: pointer;
             transition: all 0.3s linear;
-
+            z-index: 10;
             &:hover {
                 background-image: url(/images/button-order-hover.svg);
             }

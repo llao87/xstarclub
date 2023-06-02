@@ -44,6 +44,28 @@
                                     right: 0.5em;
                                 }
                             }
+                            // .slider-boats-arrows {
+                            //     display: inline-block;
+                            //     position: absolute;
+                            //     top: 0;
+                            //     right: -6.5em;
+                            //     z-index: 10;
+                            //     span.slick-prev.slick-arrow {
+                            //         display: none !important;
+                            //     }
+                            //     span.slick-next.slick-arrow {
+                            //         border: none;
+                            //         display: inline-block;
+                            //         width: 4em;
+                            //         height: 10em;
+                            //         background-color: none;
+                            //         background-image: url(/images/slick-next.svg);
+                            //         background-position: center;
+                            //         background-repeat: no-repeat;
+                            //         background-size: contain;
+                            //         cursor: pointer;
+                            //     }
+                            // }
                             .about-boat {
                                 .description {
                                     font-size: 2em;
@@ -105,9 +127,9 @@
             .slick-dots {
                 position: absolute;
                 top: 0.4em;
-                right: 27.3em;
+                right: 32.5em;
                 display: flex;
-                width: 15em;
+                width: auto;
                 align-items: center;
                 justify-content: center;
                 list-style: none;
@@ -130,6 +152,28 @@
                         font-weight: 500;
                     }
                 }
+            }
+        }
+        .slider-boats-arrows {
+            display: inline-block;
+            position: absolute;
+            top: 10.5em;
+            left: 53%;
+            z-index: 10;
+            span.slick-prev.slick-arrow {
+                display: none !important;
+            }
+            span.slick-next.slick-arrow {
+                border: none;
+                display: inline-block;
+                width: 4em;
+                height: 10em;
+                background-color: transparent;
+                background-image: url(/images/slick-next.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
             }
         }
     }

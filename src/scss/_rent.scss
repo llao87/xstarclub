@@ -55,6 +55,8 @@
                     border-left: 0.45em solid #333;
                     color: #fff;
                     background: red;
+                    text-decoration: none;
+                    transition: all 0.3s linear;
                     cursor: pointer;
                     &::after {
                         position: absolute;
@@ -70,6 +72,13 @@
                         background-size: contain;
                         background-position: center;
                         background-repeat: no-repeat;
+                    }
+
+                    &:hover {
+                        background: #333;
+                    }
+                    &:active {
+                        color: #333;
                     }
                 }
 
